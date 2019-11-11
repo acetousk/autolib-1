@@ -4,9 +4,6 @@
 
 #include "autolib/auton/auton.hpp"
 
-#include "autolib/controller/controller.hpp"
-#include "autolib/controller/driveController.hpp"
-
 #include "autolib/path/pathGenerator.hpp"
 #include "autolib/path/purePursuit.hpp"
 

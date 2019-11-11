@@ -2,7 +2,6 @@
 
 #include "okapi/api.hpp"
 #include "autolib/robot/robot.hpp"
-#include "autolib/controller/driveController.hpp"
 #include <memory>
 #include <map>
 #include <string>
