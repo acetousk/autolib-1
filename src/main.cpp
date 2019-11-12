@@ -16,8 +16,8 @@ void initialize() {
 	//use chassis controller builder
 	auto chassis = okapi::ChassisControllerBuilder()
 		.withMotors( 
-			okapi::MotorGroup( { 11, 12 } ),
-			okapi::MotorGroup( { 19, 20 } )
+			MotorGroup( { 11, 12 } ),
+			MotorGroup( { 19, 20 } )
 		)
 		//.withSensors()
 		//.withGains()
@@ -38,8 +38,14 @@ void initialize() {
 	//initialize robot's intake
 	robot->setIntake( std::make_shared<MotorGroup>(MotorGroup({ -2, 9 })) );
 
+	//initialize robot's lift
+	//robot->setLift( std::make_shared<MotorGroup>(MotorGroup({ -2, 9 })) );
+
 	//initialize robot's tray
 	robot->setOther( std::make_shared<MotorGroup>(MotorGroup({ -1, 10 })) );
+
+	//initialize robot's other2
+	//robot->setOther( std::make_shared<MotorGroup>(MotorGroup({ -1, 10 })) );
 }
 
 void disabled() {}
