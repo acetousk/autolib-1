@@ -3,6 +3,7 @@
 #pragma once
 
 #include "autolib/auton/auton.hpp"
+#include "autolib/auton/selector.hpp"
 
 #include "autolib/path/pathGenerator.hpp"
 #include "autolib/path/purePursuit.hpp"

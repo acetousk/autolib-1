@@ -58,6 +58,7 @@ std::shared_ptr<MotorGroup> Robot::getLift(){
     return nullptr;
   }
 }
+
 std::shared_ptr<MotorGroup> Robot::getOther(){
   if( other != nullptr )
     return other;
@@ -66,6 +67,7 @@ std::shared_ptr<MotorGroup> Robot::getOther(){
     return nullptr;
   }
 }
+
 std::shared_ptr<MotorGroup> Robot::getOther2(){
   if( other2 != nullptr )
     return other2;

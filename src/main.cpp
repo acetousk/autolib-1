@@ -8,8 +8,19 @@
 using namespace autolib;
 
 std::shared_ptr<Robot> robot;
+std::shared_ptr<Auton> auton;
+std::shared_ptr<Selector> selector;
+
+void inothing(std::shared_ptr<Robot> robot){
+	//literally nothing
+}
+std::function<void(std::shared_ptr<Robot>)> nothing = inothing;
 
 void initialize() {
+	//wait for adi ports
+	pros::delay(500);
+	printf("Initialize\n");
+
 	//initialize robot class
 	robot = std::make_shared<Robot>();
 
@@ -46,16 +57,33 @@ void initialize() {
 
 	//initialize robot's other2
 	//robot->setOther( std::make_shared<MotorGroup>(MotorGroup({ -1, 10 })) );
+
+	auton = std::make_shared<Auton>( robot );
+	auton->add( "nothing", nothing );
+
+//	pros::delay(50);//?
+
+	selector = std::make_shared<Selector>( auton );
+	selector->init();
+	selector->toggle("nothing");
+
 }
 
-void disabled() {}
-void competition_initialize() {}
+void disabled() {
+	printf("Disabled\n");
+}
+
+void competition_initialize() {
+	printf("Competition Initialize\n");
+}
 
 void autonomous() {
-
+	printf("Autonomous\n");
 }
 
 void opcontrol() {
+	printf("opControl\n");
+
 	while(true){
 		pros::delay(20);
 	}
