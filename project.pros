@@ -148,6 +148,41 @@
                 ],
                 "version": "3.2.0"
             },
+            "lib7842": {
+                "location": "/Users/michaeljones/Library/Application Support/PROS/templates/lib7842@1.6.0",
+                "metadata": {
+                    "origin": "local"
+                },
+                "name": "lib7842",
+                "py/object": "pros.conductor.templates.local_template.LocalTemplate",
+                "supported_kernels": "^3.2.0",
+                "system_files": [
+                    "include/lib7842/api/gui/screen.hpp",
+                    "include/lib7842/api/positioning/path/discretePath.hpp",
+                    "firmware/lib7842.a",
+                    "include/lib7842/api/purePursuit/pathGenerator.hpp",
+                    "include/lib7842/api/odometry/odomController.hpp",
+                    "include/lib7842/api/positioning/point/dataPoint.hpp",
+                    "include/lib7842/api/gui/page.hpp",
+                    "include/lib7842/api/positioning/point/vector.hpp",
+                    "include/lib7842/api/other/utility.hpp",
+                    "include/lib7842/api/gui/odom.hpp",
+                    "include/lib7842/api/positioning/point/state.hpp",
+                    "include/lib7842/api/positioning/path/compoundPath.hpp",
+                    "include/lib7842/api/gui/actions.hpp",
+                    "include/lib7842/api/odometry/customOdometry.hpp",
+                    "include/lib7842/api/gui/selector.hpp",
+                    "include/lib7842/api.hpp",
+                    "include/lib7842/api/positioning/path/abstractPath.hpp",
+                    "include/lib7842/api/other/taskWrapper.hpp",
+                    "include/lib7842/api/odometry/odomXController.hpp",
+                    "include/lib7842/api/gui/graph.hpp",
+                    "include/lib7842/api/odometry/odomMath.hpp"
+                ],
+                "target": "v5",
+                "user_files": [],
+                "version": "1.6.0"
+            },
             "odomDebug": {
                 "location": "/home/potatehoes/.config/pros/templates/odomDebug@1.1.0",
                 "metadata": {
